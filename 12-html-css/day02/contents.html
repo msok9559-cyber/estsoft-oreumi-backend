@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이미지 부분 부터 이후 정리 -->
+     <h2>Image</h2>
+     <!-- <img> 요소 : 이미지(image)를 표현 -->
+     <!-- src 속성 : <img> 요소에서 표시할 이미지의 경로(source)를 지정 -->
+     <!-- alt 속성 : 대체 텍스트(alternative text)를 지정 -->
+    <img src="images/image-01.jpg" alt="귀여운 키티!" width="200">
+    <!-- 아직 이미지 파일을 넣지않아 alt 속성에 귀여운 키티로 만 웹사이트에 표시됨 -->
+    <hr>
+    <h2>Input Form</h2>
+    <!-- <form> 요소: 입력 양식(input form)을 표현 -->
+    <!-- action 속성: 입력 요소의 형태(type)을 지정  -->
+    <!-- method 속성: 사용자가 입력한 데이터를 전송할 방식(get, post)을 지정 -->
+    <form action="/sever/program" mathod="post">
+        <p>
+            <!-- <input> 요소: 입력 요소 (input element)를 표현 -->
+            <!-- type 속성: 입력 요소의 형태(type)을 지정 -->
+            <!-- namp 속성: 사용자가 입력한 데이터를 구분하기 위한 이름 을 지정 -->
+            <!-- type="text" : 한줄 짜리 입력 창을 표현 -->
+             Text:
+            <!-- <input type="text" name="username">
+            <input type="text" name="username" value="harry">
+            <input type="text" name="username" placeholder="Your username"> -->
+            <input type="text" name="username" autocomplete="off">
+            <!-- autocomplete="off" < 자동 완성을 끄는 코드 개인정보등으로인하여 off를 사용하는 경우가 있을 수 있음 -->
+        </p>
+        <p>
+            <!-- type="radio": 같은 name 속성을 가지고 있는 라디오 버튼 가운데
+                하나를 선택할 수 있는 라디오 버튼을 표현 -->
+            <!-- value 속성: radio 버튼이나 checkbox 버튼에서 전달할 값을 지정 -->
+            <!-- <label> 요소: 입력 요소의 안내 문구를 표현 -->
+            RADIO: <input type="radio" name="favorite" value="milk" id="milk">
+                <label for="milk">우유</label>
+                <label>
+                    <input type="radio" name="favorite" value="cocoa"> 코코아
+                </label>
+                <input type="radio" name="favorite" value="juice" checked> 주스
+        </p>
+        <p>
+            <!-- type="checkbox": 체크할 수 있는 checkbox 버튼을 표현 -->
+                CHECKBOX: <label>
+                    <input type="checkbox" name="agree" value="yes" checked> 동의합니까?
+                     </label>
+        </p>
+        <p>
+            <!-- type="file": 파일 선택 입력 창을 표현 -->
+                FILE: <input type="file" name="photo">
+        </p>
+        <p>
+            <!-- type="reset": 입력 양식을 초기화하는 버튼을 표현 -->
+                <!-- value 속성: 버튼에 표시되는 텍스트를 지정 -->
+            RESET: <input type="reset" name="reset" value="다 지워!">
+        </p>
+        <p>
+            <!-- type="submit": 입력 양식에 입력한 데이터를 지정한 URL로 제출하는 버튼을 표현 -->
+                SUBMIT: <input type="submit" name="login" value="LOGIN">
+        </p>
+        <p>
+            <!-- <select> 요소: 선택 입력 요소를 표현 -->
+                SELECT: <select name="tour">
+                    <!-- <option> 요소: <select> 요소에 포함되는 선택 항목을 표현 -->
+                    <option value="iceland">아이슬란드</option>
+                    <option value="swiss">스위스</option>
+                    <option value="amazon" selected>아마존</option>
+                </select>
+        </p>
+        <p>
+            <!-- <textarea> 요소: 입력 글 상자(text area)를 표현 -->
+                TEXTAREA: <textarea name="comment" cols="30" rows="5"></textarea>
+        </p>
+    </form>
+    <hr>
+</body>
+</html>
