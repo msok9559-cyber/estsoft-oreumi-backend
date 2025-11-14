@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list{color: yellowgreen; }
+        #red{color: red;}
+        .red{color: red}
+        .yellow{color: yellow;}
+        .green{color: green;}
+    </style>
+</head>
+<body>
+    <!-- head 부분에 <style> 작성을 시작 -->
+    <!-- id 속성 <style> 작성 방법 : id="CSS" 일시 style 부분에 #CSS {} 로 작성  -->
+    <!-- clss 속성 <style> 작성 방법 : class="CSS" 일시 style 부분에서 .CSS{} 로 작성 -->
+    <!-- id 속성과 class 속성 -->
+    <!-- - 스타일 시트나 javascript 프로그렘에서 특정 html 요소(객체)를 선택하기 위해 id 속성 이나 class 속성으로 html 요소에서 식별자를 부여한다 -->
+    <!-- id 속성 -->
+    <!-- 각각의 html 요소에 개별적인 식별자를 부여하기 위한 속성 -->
+    <!-- DOM 에서 하나의 id 속성 값은 단하나의 HTML 요소에만 적용할수 있다 즉 id 속성값은 DOM에서 유일해야 한다. -->
+    <!-- class 속성 -->
+    <!-- 여러 html 요소에 같은 실벽자를 부여하기 위한 속성 -->
+    <!-- 여러 html 요소에 같은 class 속성 값을 적용할 수 있다 -->
+    <!-- <html> <head> <base> <meta> <param> <script> <style> <title> 요소등을 제외한 보든 요소에 사용할 수 있다. -->
+
+    <h1>id 속성과 class 속성</h1>
+    <ul id="list">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ul>
+    <!-- list 부분에서 모든 li 요소의 색깔을 변경 하고싶을때에는 ul 부분에 id 속성을 넣고 style 에서 color를 yellowgreen 으로 변경시 모든 li 요소의 색상이 변경 된다 -->
+     <ul>
+        <li class="red">html</li>
+        <li class="yellow">css</li>
+        <li class="green">javacript</li>
+     </ul>
+    <!-- list 부분에 li 요소 각각에 색깔을 변경 하고싶을때에는
+      li 부분에 class 속성을 넣고 style 에서 .red 등 여러 요소마다
+       지정한 클래스 네임으로 지정하여 색상을 입힐시 변경 된다 
+       -->
+    <!-- id 속성의 호출은 # , class 속성의 호출은 . 헷갈리지말고 정확한 호출 문구로 호출할것 -->
+</body>
+</html>
