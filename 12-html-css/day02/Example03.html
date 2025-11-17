@@ -6,10 +6,30 @@
     <title>Document</title>
     <style>
         .darkgray{background-color: darkgray;}
+        /* 상대 선택자 */
+        #title:active {background-color: yellowgreen; }
+        #title:hover { color: red;}
+        /* 구조 선택자 */
+        #list > li:nth-child(3n+2){ color: red; }
+        #list > li:first-child {background-color: yellowgreen;}
+        #list > li:nth-child(1) {font-weight: bold;}
+        #list > li:nth-child(3n) { color: blue;}
+        h1:first-child{color: red;}
     </style>
 </head>
 <body>
-    <h1>천하대학교 웹학과 성정</h1>
+
+    <h1>List</h1>
+
+    <ol id="list">
+        <li>list#1</li>
+        <li>list#2</li>
+        <li>list#3</li>
+        <li>list#4</li>
+        <li>list#5</li>
+    </ol>
+
+    <h1 id="title">천하대학교 웹학과 성적</h1>
 
     <table border="1">
         <thead>
@@ -33,8 +53,8 @@
                 <td>박영희</td>
                 <td>B</td>
                 <td>C</td>
-                <td>D</td>
                 <td>A</td>
+                <td>D</td>
             </tr>
             <tr>
                 <td class="darkgray">홍길동</td>
