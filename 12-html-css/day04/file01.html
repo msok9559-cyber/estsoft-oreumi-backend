@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dark.css">
+    <style>
+        #box{
+            width: 200px;
+            /* HTML 요소의 높이를 지정하지 않으면 콘텐츠에 의해 높이가 결정 된다. */
+            /* height: 200px; */
+            border: 2px solid goldenrod;
+
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+
+            /* 
+            * 한 줄로 표시되는 내부 텍스트를 콘텐트 영역의 가운데에 표시하기 위해
+            * 행의 높이를, 즉 line_height 스타일 속성을 HTML 요소의 콘텐트 영역의
+            * 높이만큼 설정
+            */
+            line-height: 200px;
+
+            
+        }
+
+        hr{
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- font-variant 스타일 속성 -->
+    <!-- small-caps 출력될 글자를 작은 대문자로 지정 (한글에서는 x 영문에서는 o) -->
+    
+    <!-- **line-height 스타일 속성 -->
+    <!-- 행의 높이를 지정하는 스타일속성 -->
+    <!-- 모돈내부 텍스트들은 한줄내에 글자들이 표시가 된다 -->
+    <!-- line-height : 1.5rem > 가독성이 좋음 -->
+    <div id="box">BOX</div>
+    <!-- 박스 가운데 글자 한개를 가운데로 옮길때에는 line-height: 000 으로 하며 height 높이에 맞게 값을 주면 가운데로 이동 -->
+    
+    <!-- letter-spacing 스타일 속성 (자주 사용x) -->
+    <!--  내부 텍스트에서 글자와 글자 사이의 간격을 지정 -->
+    <!-- noraml= 기본값 -->
+    <!-- length 크기 단위로 자간 설정 -->
+    <!-- letter-spacing 값을 양수로 주면 벌어짐 -->
+    <!-- letter-spacing 값을 음수로 주면 양수와 반대로 이동 함 -->
+
+    <!-- text-align 스타일 속성 -->
+    <!-- left -->
+    <!-- right -->
+    <!-- center -->
+
+    <!-- text-decoration-lint 스타일 속성 -->
+
+
+    <!-- text-decoration-style 스타일 속성 -->
+
+    <!-- text-indent 스타일 속성 -->
+    <!-- 퍼센트 단위 기준은 컨테이닝 블록의 너비이다. -->
+
+    <!-- <pre> 태그 -->
+    <!-- 내부 텍스트 내에 공백 문서까지도 HTML내에 그대로 출력 -->
+    
+    <hr>
+
+    <pre>
+        가
+        나
+        다
+        라
+    </pre>
+
+    <!-- white-space 스타일 속성 -->
+    <!-- 자주사용되지는 않으나 가끔 반드시 써야하는 경우가 생길 수 있음 -->
+    <!-- normal -->
+    <!-- nowrap : 공백 문자 여러 개를 반칸 하나로 처리 개행하지 않음-->
+    <!-- pre : 공백 문자를 그대로 출력 개행은 문서에쓰인대로 pre 요소와 같음-->
+    <!-- pre-wrap : 공백 문자를 그대로 html 요소의 경계를 만나면 개행-->
+    <!-- pre-line : 공백 문자 여러개를 빈칸 하나로 처리 요소의 경계를 만나거나 문서에 쓰인대로 개행-->
+    
+
+    <!-- list-style-type  스타일 속성-->
+    <!-- 목록에서 목록 항목 앞에 붙는 마커의 종료 -->
+    <!-- none : 마커를 표시 하지 않음 -->
+    <!-- disc : 마커를 속이찬 원으로 지정 (기본값) -->
+    <!-- circle : 마커를 속이 빈 원으로 지정 -->
+    <!-- square -->
+
+
+    <!-- list0styl-postiton(자주 사용 x) -->
+    <!-- outside : 기본값 -->
+    <!-- inside: li 요소 의 안쪽으로 표시 -->
+
+    <!-- css 그림자 스타일 속성 -->
+    <!-- text-shadow : 글자에 그림자 설정 -->
+    <!-- box-shadow : 박스에 그림자 설정 -->
+    
+    <!-- 기준영역 -->
+    <!-- relative : 요소가 문서의 일반적인 흐름에 따라 배치됐을때의 영역 -->
+    <!-- absolute, fixed : 컨테이닝 블럭 -->
+    
+</body>
+</html>
