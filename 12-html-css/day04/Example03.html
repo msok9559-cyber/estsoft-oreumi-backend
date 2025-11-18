@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example02</title>
+
+<style>
+    #box {
+        border: 2px solid #333;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+        width: 460px;
+        margin: 0 auto;
+    }
+    #box > div {
+        height: 200px;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .pink{ background-color: pink; }
+    .yellowgreen{ background-color: yellowgreen; }
+    .cyan{ background-color: cyan; }
+    .gold{ background-color: gold; }
+</style>
+</head>
+<body>
+    <div id="box">
+        <div class="pink">Pink</div>
+        <div class="yellowgreen">Yellowgreen</div>
+        <div class="cyan">Cyan</div>
+        <div class="gold">Gold</div>
+    </div>
+</body>
+</html>
