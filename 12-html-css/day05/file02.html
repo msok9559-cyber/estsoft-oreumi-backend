@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            line-height: 2.4;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+        }
+        #header{background-color: #422;}
+        #nav{background-color: #242;}
+        #sidebar{background-color: #244;}
+        #content{background-color: #442;}
+        #footer{background-color: #224;}
+
+        #sidebar, #content{line-height: 500px;}
+
+        /* t사이드 바 영역과 본문 영역이 나란히 배치되도록 플렉스 컨터이너로 설정 */
+        #container{display: flex;}
+
+        #sidebar{width: 200px;}
+
+        #content{
+            width: calc(100% - 200px) ;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- 가변 폭 레이아웃(fluid layout) -->
+    <header id="header">Header</header>
+    <nav id="nav">Navigation</nav>
+    <div id="container">
+    <aside id="sidebar">siderbar</aside>
+    <main id="content">Content</main>
+    </div>
+    <footer id="footer">Footer</footer>
+</body>
+</html>
