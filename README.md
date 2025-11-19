@@ -3,3 +3,6 @@
     - HTML/CSS
     - JavaScript
     - Java
+2. 부족하다 느끼는 것(HTML)  
+   - style속성 활용법  
+   - 선택자 활용
