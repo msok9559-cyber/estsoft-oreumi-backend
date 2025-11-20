@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = "Herry Potter";
+        var age = 11 ;
+
+        console.log("Name =",name)
+
+        console.log( "Age =" ,age)
+
+        var fruits = ["Apple", "Banana", "Cherry", "Grape", "Melon", "Strawberry"]
+
+        // 그룹의 시작 이름은 괄호안에 표시해서 그룸명을 나타낼것
+        console.group('Ex-02');
+
+        console.log('fruits[2] = ' + fruits[2])
+
+        console.groupEnd();
+        // 그룹의 끝
+
+        var x = 10;
+        var y = 3;
+        
+        console.group('Ex03');
+
+        console.log("x ="+ x + ', y =' + y );
+        console.log('x + y = ' , x + y);
+        console.log('x - y = ' , x - y);
+        console.log('x * y = ' , x * y);
+        console.log('x / y = ' , x / y);
+        console.log('x % y = ' , x % y);
+
+        console.groupEnd();
+
+    </script>
+</body>
+</html>
