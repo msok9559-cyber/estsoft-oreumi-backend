@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-True Layout</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        #container {
+            width: 1080px;
+            margin: 0 auto;
+        }
+
+        #header {
+            font-weight: bold;
+            font-size: 2em;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+            padding: 40px;
+        }
+        #nav {line-height: 50px;}
+
+        #nav>ol {
+            display: flex;
+            background: gray;
+            color: white;
+        }
+
+        #nav > ol > li {padding: 0 30px;}
+        #nav > ol > li:nth-last-child(3) { margin-right: auto; }
+        #nav > ol > li > a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #content{display: flex;}
+
+        #aside {
+            width: 200px;
+            border-right: 1px solid gray;
+        }
+        #aside > ol > li {
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        #main {
+            width: 880px;
+            padding: 20px 30px;
+        }
+        #main > h2{
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #footer{
+            text-align: right;
+            font-size: 0.8em;
+            border-top: 1px solid gray;
+            line-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">One-True Layout</header>
+        <nav id="nav">
+            <ol>
+                <li><a href="https:// google.con">Home</a></li>
+                <li><a href="https:// google.con">HTML</a></li>
+                <li><a href="https:// google.con">CSS</a></li>
+                <li><a href="https:// google.con">JavaScript</a></li>
+                <li><a href="https:// google.con">jQuery</a></li>
+                <li>Log in</li>
+                <li>Sign up</li>
+            </ol>
+
+        </nav>
+        <div id="content">
+            <aside id="aside">
+                <ol>
+                    <li>Home</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                </ol>
+            </aside>
+            <main id="main">
+                <h2>Lorem Ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis elit finibus urna gravida, nec<br>
+                        varius leo consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac<br>
+                        turpis egestas. Fusce facilisis commodo nunc a vestibulum. Nulla sapien enim, porta eu mattis quis,<br>
+                        lacinia sed dui. Sed et purus non mauris tincidunt suscipit. Etiam placerat sed lacus eget cursus.<br>
+                        In accumsan ex luctus gravida iaculis. Proin dolor sapien, laoreet sed velit eu, bibendum rhoncus<br>
+                    </p>      
+                        <br>
+                    <p>
+                        neque. Mauris lacinia arcu nunc, eget euismod nunc imperdiet at. Curabitur at ornare metus. Donec eu<br>
+                        neque enim. Vestibulum scelerisque consectetur consequat. Vivamus blandit ligula urna. Phasellu <br>
+                        dignissim imperdiet imperdiet. Donec sit amet ligula ac mi tincidunt gravida eu eu sapien. Donec<br>
+                        sagittis urna vitae velit finibus venenatis.
+                    </p>
+                        <br>
+                    <p>
+                        Suspendisse potenti. Curabitur blandit sed ipsum eget semper. Vivamus ipsum enim, volutpat nec <br>
+                        vulputate vel, fringilla sed libero. Sed commodo, ligula at finibus finibus, sem arcu volutpat erat, <br>
+                        vel auctor dui urna non quam. Curabitur ullamcorper arcu at volutpat egestas. Quisque congue arcu a <br>
+                        nisl accumsan viverra. Duis in faucibus lorem. Vivamus non quam felis. Vivamus nec ante metus. Sed <br>
+                        vitae dolor quis erat commodo condimentum. 
+                    </p>
+            </main>
+        </div>
+        <footer id="footer">
+            © 2016-2024 CheonHa University.
+        </footer>
+    </div>
+</body>
+
+</html>
