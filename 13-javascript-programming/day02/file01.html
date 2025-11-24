@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 5;
+
+        if (num % 2 == 0){ 
+            console.log(num, 'is an  Even numbers number')
+        }
+        else{
+            console.log(num, 'is an odd numbers')
+        }
+        
+    </script>
+    <script>
+        var num = 42;
+        if (num % 3 === 0 && num % 5 === 0){
+            console.log('FizzBuzz');
+        }else if (num % 3 ===0){
+            console.log('Fizz');
+        }else if(num % 5 ===0){
+            console.log('Buzz');
+        }else{
+            console.log(num);
+        }
+    </script>
+    <script>
+        for(var i = 1; i <= 10; i ++){
+            console.log(i)
+        }
+    </script>
+    <script>
+        for(var i =1; i <= 20; i++){
+            if(i % 2 == 0){
+                console.log(i)
+            }
+        }
+    </script>
+    <!-- 배열 : 저장공간들, 즉 변수들의 집합이다. 식별자 하나로 여러 저장 공간에 접글할 수 있다. -->
+     <script>
+        var number = [4, 17, 32, 3, 8, 13, 41, 27, 16, 1];
+        for(var i = 0; i<= number.length; i++){
+            console.log(number[i])
+        }
+     </script>
+</body>
+</html>
