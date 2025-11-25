@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = ['Time is gold,','No sweat, no sweet', 'Asking costs nothing.', 'Step by step gose a long way', 'You will naver know until you try.'];
+        let index = 0;
+        var timerID = window.setInterval(function(){
+            console.log((index + 1) + '.' + n1[index]);
+            index++;
+                if(index === n1.length){
+                    clearInterval(timerID);
+                }
+        },2000)
+    </script>
+</body>
+</html>
