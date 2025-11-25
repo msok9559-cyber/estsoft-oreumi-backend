@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = ['red;', 'green;', 'bule;'];
+        let index = 0;
+        window.setInterval(function(){
+            console.log('background-color:', n1[index]);
+            index++;
+
+            if(index === n1.length){
+                index = 0;
+            }
+        },2000)
+    </script>
+</body>
+</html>
