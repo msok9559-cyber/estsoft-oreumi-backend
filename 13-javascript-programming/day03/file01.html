@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printName() {
+            console.log('Park min sung')
+        };
+        printName();
+    </script>
+    <script>
+        function greeting(name){
+            console.log(`Hi, ${name}. Nice to meet you!`)
+        }
+        greeting('Harry');
+    </script>
+    <script>
+        function getAverage(x, y){
+            return (x+y) / 2 ;
+        }
+        var n1 = 31;
+        var n2 = 17;
+
+        console.log('The average of %d and %d = %d', n1, n2, getAverage(n1,n2))
+    </script>
+    <script>
+        var rect = {
+            width : 13, height : 8,
+            getAverage: function(){
+                return this.width * this.height;
+            }
+        };
+        console.log(rect.getAverage())
+    </script>
+    <script>
+        
+        window.setTimeout(function(){
+            console.log('Pay attention!')
+        },3000);
+    </script>
+    <script>
+        var i = 0;
+        window.setInterval(function(){
+            i++;
+            console.log('i =', i)
+        },2000);
+    </script>
+</body>
+</html>
