@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="best">Do YOUR BEST!</h1>
+    <script>
+        let color = document.getElementById('best');
+        let n1 = ['red', 'blue', 'green']
+        let index = 0;
+        window.setInterval(function(){
+            color.style.color = n1[index];
+            index++
+
+            if(index >= n1.length){
+                index = 0;
+            }
+        },2000)
+    </script>
+    <hr>
+    <div id="box"></div>
+
+    <script>
+        let box = document.getElementById('box');
+        let int = 1;
+
+        let time = window.setInterval(function(){
+            box.style.left = (int * 200 ) + 'px';
+            int++;
+
+            if(int === 4) window.clearInterval(time);
+        },2000)
+
+        
+    </script>
+</body>
+</html>
