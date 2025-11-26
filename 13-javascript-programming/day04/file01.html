@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">Hello World!</h1>
+
+    <script>
+        let h1 = document.getElementById('hello');
+        console.log(h1)
+        h1.innerHTML = 'Hello JavaScript!'
+    </script>
+
+    <hr>
+    
+    <a href="https://www.google.com" id="search">Search engine</a>
+
+    <script>
+        let a1 = document.getElementById('search');
+        a1.href = 'https://www.naver.com'
+    </script>
+
+    <hr>
+    <h1 id="time">Time is gold.</h1>
+    <script>
+        let a2 = document.getElementById('time');
+        window.setTimeout(function(){
+            a2.style.display = 'none';
+        },3000)
+    </script>
+
+    <hr>
+    <h2 class="words">Time is gold</h2>
+    <h2 class="words">no sweat, no sweet.</h2>
+    <h2 class="words">Asking costs nothing.</h2>
+    <script>
+        let words = document.getElementsByClassName('words');
+        // for (let i = 0; i < words.length; i++){
+            //words[i].style.color = 'red';
+        // }
+
+        // for of 구문
+        for(let element of words){
+            element.style.color = 'red';
+        }
+    </script>
+    <hr>
+    <ul id="list">
+        <li><a href="http://www.google.com">Google</a></li>
+        <li><a href="https://www.naver.com">Naver</a></li>
+        <li><a href="http://www.daum.net">Daun</a></li>
+    </ul>
+    <script>
+        let ward = document.querySelectorAll('#list > li > a');
+        //for 구문으로 배열 links 의 원소 즉 htmlelement 객체에 차례대로 접근
+        // for(let i = 0; i < ward.length; i++){
+        //     let href = ward[i].href;
+
+        //     ward[i].innerHTML += ` (${href}) `;
+        // };
+
+        //for - of 구문
+        for(let element of ward){
+           let href = element.href;
+           
+           element.innerHTML += ` (${href})`;
+        };
+    </script>
+</body>
+</html>
