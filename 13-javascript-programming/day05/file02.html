@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            width: 200px;
+            height: 40px;
+        }
+    </style>
+    <script>
+        window.addEventListener('load',function(){
+            document.getElementById('info').addEventListener('submit',function(event){
+                event.preventDefault();
+                let name = document.getElementById('name').value;
+                let age = document.getElementById('age').value;
+                let gender = document.querySelector('input[name="gender"]:checked');
+                let resultText = `반갑습니다. ${name}님!<br> ${name}님은 ${age}대 ${gender.value}입니다.`;
+                document.getElementById('box').innerHTML = resultText;
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <form action="/sever/program" method="post" id="info">
+            <p>
+                <label for="name">이름:</label>
+                <input type="text" name="name" id="name">
+                
+            </p>
+           <p>
+                <label for="sex">성별:</label>
+                <label for="male">남자</label><input type="radio" name="gender" id="male" value="남자">
+                <label for="female">여자</label><input type="radio" name="gender" id="female" value="여자">
+            </p>
+            <p>
+                <label for="age">연령대:</label>
+                <select id="age">
+                    <option value="10">10대</option>
+                    <option value="20">20대</option>
+                    <option value="30">30대</option>
+                    <option value="40">40대</option>
+                    <option value="50">50대</option>
+                </select>
+            </p>
+            <input type="submit" value="확인" class="button">
+
+        </form>
+        <div id="box">
+
+        </div>
+
+    </div>
+</body>
+</html>
