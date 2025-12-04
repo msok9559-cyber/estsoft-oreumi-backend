@@ -1,7 +1,7 @@
 package day05;
 
 public class file08 {
-    static void main() {
+    public static void main(String[] args) {
         Student s1 = new Student();
 
         s1.setName("Cheolsu Kim");
