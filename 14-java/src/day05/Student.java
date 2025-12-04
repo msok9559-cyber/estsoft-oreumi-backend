@@ -8,6 +8,10 @@ public class Student {
     private double average;
     private char grade;
 
+    private boolean check(int score){
+        return score >= 0 && score <= 100;
+    }
+
     public String getName() {return name;}
     public int getKorean() {return korean;}
     public int getMath() {return math;}
@@ -16,9 +20,22 @@ public class Student {
     public char getGrade() {return grade;}
 
     public void setName(String name) {this.name = name;}
-    public void setKorean(int korean) {this.korean = korean;}
-    public void setMath(int math) {this.math = math;}
-    public void setEnglish(int english) {this.english = english;}
+    public void setKorean(int korean) {
+        if(check(korean)){
+            this.korean = korean;
+        }
+
+    }
+    public void setMath(int math) {
+        if(check(math)){
+            this.math = math;
+        }
+    }
+    public void setEnglish(int english) {
+        if(check(english)){
+            this.english = english;
+        }
+    }
     public void setAverage(double average) {this.average = average;}
     public void setGrade(char grade) {this.grade = grade;}
     public void calculate(){
