@@ -19,18 +19,18 @@ public class Student {
     public void setKorean(int korean) {this.korean = korean;}
     public void setMath(int math) {this.math = math;}
     public void setEnglish(int english) {this.english = english;}
-    public void setAverage(double average) {
-        this.average = (korean + math + english) / 3.0;
-    }
-    public void setGrade(char grade) {
+    public void setAverage(double average) {this.average = average;}
+    public void setGrade(char grade) {this.grade = grade;}
+    public void calculate(){
+        average = (korean + math + english) / 3.0;
+
         if (average >= 90) grade = 'A';
         else if (average >= 80) grade = 'B';
         else if (average >= 70) grade = 'C';
         else if (average >= 60) grade = 'D';
         else grade = 'F';
-        this.grade = grade;
-
     }
+
     public void print() {
         System.out.println("Name: " + name);
         System.out.printf("Average: %.1f\n " , average);
