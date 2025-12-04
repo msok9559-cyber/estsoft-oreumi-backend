@@ -53,6 +53,11 @@ public class Student {
         System.out.printf("Average: %.1f\n " , average);
         System.out.println("Grade: " + grade);
     }
+    /// 처음 짠코드하고 변한점 처음에는 average와 grade에 바로 계산하는 식으로 코드를 짬
+    ///  문제 1) 출력할려고 보니 average 와 grade를 공백으로 두고 출력해야되서 코드가좀 길어지는 경향이있는거같아
+    ///  계산해주는걸 따로 만들어서 출력함
+    ///  문제 2) 검사를 하는 코드를 넣지않음 ************
+    /// 항상 검사를하는 코드를 넣고 할것 이상한값이들어오면 문제가 생기기때문
 
 
 }
