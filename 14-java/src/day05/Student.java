@@ -7,7 +7,7 @@ public class Student {
     private int english;
     private double average;
     private char grade;
-
+    
     private boolean check(int score){
         return score >= 0 && score <= 100;
     }
