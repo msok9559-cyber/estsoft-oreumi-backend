@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 16;
+        var y = 29;
+        var n1;
+        if(x>y){
+            n1 = x - y;
+        }else{
+            n1 = y - x;
+        }
+        console.log(n1)
+    </script>
+
+    <script>
+        var korea = 88;
+        var english = 72;
+        var math = 92;
+        var average = (korea + english + math) / 3;
+        console.log("Average :", average);
+        if(average >= 90){
+            console.log('Grade : A')
+        }else if(average >= 80 ) {
+            console.log('Greade : B')
+        }else if(average >= 70){
+            console.log('Greade : C')
+        }else {
+            console.log('Greade : F')
+        }
+
+    </script>
+    <script>
+        var num = 8;
+        for(var i = 1; i <= num; i++){
+            console.log(i +'. Do your best!')
+        }
+    </script>
+    <script>
+        var numbers = [4, 17, 32, 3, 8, 13, 41, 27, 16, 1]
+        for(var i = 0; i < numbers.length; i++){
+            if(numbers[i] > 15){
+                console.log(numbers[i])
+            }
+        }
+    </script>
+    <script>
+        var numbers = [4, 17, 32, 3, 8, 13, 41, 27, 16, 1]
+        for(var i = 0; i < numbers.length; i++){
+            if(i % 2 ===0 ){
+                console.log(numbers[i])
+            }
+        }
+    </script>
+</body>
+</html>
